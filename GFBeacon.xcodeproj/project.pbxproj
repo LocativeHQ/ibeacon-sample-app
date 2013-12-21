@@ -14,13 +14,15 @@
 		2A9317D7186597FC005AB44B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9317D6186597FC005AB44B /* main.m */; };
 		2A9317DB186597FC005AB44B /* GFBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9317DA186597FC005AB44B /* GFBAppDelegate.m */; };
 		2A9317DE186597FC005AB44B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A9317DC186597FC005AB44B /* Main.storyboard */; };
-		2A9317E1186597FC005AB44B /* GFBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9317E0186597FC005AB44B /* GFBViewController.m */; };
 		2A9317E3186597FC005AB44B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A9317E2186597FC005AB44B /* Images.xcassets */; };
 		2A9317EA186597FC005AB44B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9317E9186597FC005AB44B /* XCTest.framework */; };
 		2A9317EB186597FC005AB44B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9317CA186597FC005AB44B /* Foundation.framework */; };
 		2A9317EC186597FC005AB44B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9317CE186597FC005AB44B /* UIKit.framework */; };
 		2A9317F4186597FC005AB44B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A9317F2186597FC005AB44B /* InfoPlist.strings */; };
 		2A9317F6186597FC005AB44B /* GFBeaconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9317F5186597FC005AB44B /* GFBeaconTests.m */; };
+		2A9318011865A18F005AB44B /* GFBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9318001865A18F005AB44B /* GFBViewController.m */; };
+		2A9318031865A449005AB44B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9318021865A449005AB44B /* CoreLocation.framework */; };
+		2A9318051865A947005AB44B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9318041865A947005AB44B /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +47,16 @@
 		2A9317D9186597FC005AB44B /* GFBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFBAppDelegate.h; sourceTree = "<group>"; };
 		2A9317DA186597FC005AB44B /* GFBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFBAppDelegate.m; sourceTree = "<group>"; };
 		2A9317DD186597FC005AB44B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2A9317DF186597FC005AB44B /* GFBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFBViewController.h; sourceTree = "<group>"; };
-		2A9317E0186597FC005AB44B /* GFBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFBViewController.m; sourceTree = "<group>"; };
 		2A9317E2186597FC005AB44B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2A9317E8186597FC005AB44B /* GFBeaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GFBeaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9317E9186597FC005AB44B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2A9317F1186597FC005AB44B /* GFBeaconTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GFBeaconTests-Info.plist"; sourceTree = "<group>"; };
 		2A9317F3186597FC005AB44B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2A9317F5186597FC005AB44B /* GFBeaconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFBeaconTests.m; sourceTree = "<group>"; };
+		2A9317FF1865A18F005AB44B /* GFBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBViewController.h; sourceTree = "<group>"; };
+		2A9318001865A18F005AB44B /* GFBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBViewController.m; sourceTree = "<group>"; };
+		2A9318021865A449005AB44B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2A9318041865A947005AB44B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9318051865A947005AB44B /* CoreBluetooth.framework in Frameworks */,
+				2A9318031865A449005AB44B /* CoreLocation.framework in Frameworks */,
 				2A9317CD186597FC005AB44B /* CoreGraphics.framework in Frameworks */,
 				2A9317CF186597FC005AB44B /* UIKit.framework in Frameworks */,
 				2A9317CB186597FC005AB44B /* Foundation.framework in Frameworks */,
@@ -101,6 +107,8 @@
 		2A9317C9186597FC005AB44B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A9318041865A947005AB44B /* CoreBluetooth.framework */,
+				2A9318021865A449005AB44B /* CoreLocation.framework */,
 				2A9317CA186597FC005AB44B /* Foundation.framework */,
 				2A9317CC186597FC005AB44B /* CoreGraphics.framework */,
 				2A9317CE186597FC005AB44B /* UIKit.framework */,
@@ -115,9 +123,9 @@
 				2A9317D9186597FC005AB44B /* GFBAppDelegate.h */,
 				2A9317DA186597FC005AB44B /* GFBAppDelegate.m */,
 				2A9317DC186597FC005AB44B /* Main.storyboard */,
-				2A9317DF186597FC005AB44B /* GFBViewController.h */,
-				2A9317E0186597FC005AB44B /* GFBViewController.m */,
 				2A9317E2186597FC005AB44B /* Images.xcassets */,
+				2A9317FF1865A18F005AB44B /* GFBViewController.h */,
+				2A9318001865A18F005AB44B /* GFBViewController.m */,
 				2A9317D1186597FC005AB44B /* Supporting Files */,
 			);
 			path = GFBeacon;
@@ -251,7 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A9317DB186597FC005AB44B /* GFBAppDelegate.m in Sources */,
-				2A9317E1186597FC005AB44B /* GFBViewController.m in Sources */,
+				2A9318011865A18F005AB44B /* GFBViewController.m in Sources */,
 				2A9317D7186597FC005AB44B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,7 +327,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marcus Kida (9V2E3Q9G27)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Marcus Kida (9V2E3Q9G27)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -337,6 +346,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "17BF01D7-5C27-49C1-9992-10355A4D90BD";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -358,7 +368,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marcus Kida (9V2E3Q9G27)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marcus Kida (9V2E3Q9G27)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -369,6 +380,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "17BF01D7-5C27-49C1-9992-10355A4D90BD";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

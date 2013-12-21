@@ -1,23 +1,200 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="jdq-N6-BrS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Navigation Controller-->
+        <scene sceneID="zBN-tR-inb">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="GFBViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="jdq-N6-BrS" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="y8z-rh-Hru">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.66666666666666663" green="0.15686274509803921" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wka-gy-Rbv" kind="relationship" relationship="rootViewController" id="om9-1A-eMd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N1R-za-eQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-337" y="-2"/>
+        </scene>
+        <!--View Controller - Geofancy iBeacon-->
+        <scene sceneID="gb9-Ns-yAK">
+            <objects>
+                <tableViewController id="wka-gy-Rbv" customClass="GFBViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="OsM-qZ-tse">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="Fhe-ZK-Mwc">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="90" id="T5F-6g-8Bb">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T5F-6g-8Bb" id="U5X-cB-cK7">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SampleIcon" translatesAutoresizingMaskIntoConstraints="NO" id="p9L-dk-Ix3">
+                                                    <rect key="frame" x="124" y="9" width="72" height="72"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="p9L-dk-Ix3" secondAttribute="bottom" constant="9" id="4ix-Vt-hlC"/>
+                                                <constraint firstAttribute="trailing" secondItem="p9L-dk-Ix3" secondAttribute="trailing" constant="124" id="ZJh-5F-eBM"/>
+                                                <constraint firstItem="p9L-dk-Ix3" firstAttribute="top" secondItem="U5X-cB-cK7" secondAttribute="top" constant="9" id="bvV-M3-VpD"/>
+                                                <constraint firstItem="p9L-dk-Ix3" firstAttribute="leading" secondItem="U5X-cB-cK7" secondAttribute="leading" constant="124" id="xAS-Xx-fuW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="UUID" id="mSh-DG-aws">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="zqh-g2-w1Q">
+                                        <rect key="frame" x="0.0" y="176" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zqh-g2-w1Q" id="PaO-Le-ayu">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter custom UUID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a2Q-V5-ICQ">
+                                                    <rect key="frame" x="20" y="7" width="280" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="a2Q-V5-ICQ" secondAttribute="bottom" constant="7" id="6Jg-mq-6Ke"/>
+                                                <constraint firstItem="a2Q-V5-ICQ" firstAttribute="top" secondItem="PaO-Le-ayu" secondAttribute="top" constant="7" id="FRl-MJ-v7r"/>
+                                                <constraint firstAttribute="trailing" secondItem="a2Q-V5-ICQ" secondAttribute="trailing" constant="20" id="ZDd-KE-XfW"/>
+                                                <constraint firstItem="a2Q-V5-ICQ" firstAttribute="leading" secondItem="PaO-Le-ayu" secondAttribute="leading" constant="20" id="qoL-a8-l52"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Major ID" id="FeO-1P-pZa">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="2xx-V6-m8j">
+                                        <rect key="frame" x="0.0" y="242" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2xx-V6-m8j" id="j22-pz-shp">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter iBeacon's Major ID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hEo-02-lXf">
+                                                    <rect key="frame" x="20" y="7" width="280" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hEo-02-lXf" firstAttribute="leading" secondItem="j22-pz-shp" secondAttribute="leading" constant="20" id="2N0-27-KAV"/>
+                                                <constraint firstAttribute="bottom" secondItem="hEo-02-lXf" secondAttribute="bottom" constant="7" id="Nic-w8-zf1"/>
+                                                <constraint firstAttribute="trailing" secondItem="hEo-02-lXf" secondAttribute="trailing" constant="20" id="QHB-8P-iPd"/>
+                                                <constraint firstItem="hEo-02-lXf" firstAttribute="top" secondItem="j22-pz-shp" secondAttribute="top" constant="7" id="Vd6-p1-PaX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Minor ID" id="2Mv-nM-HIu">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="wey-IB-xmx">
+                                        <rect key="frame" x="0.0" y="308" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wey-IB-xmx" id="aYQ-wQ-wsh">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter iBeacon's Minor ID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fe2-nG-027">
+                                                    <rect key="frame" x="20" y="7" width="280" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Fe2-nG-027" secondAttribute="trailing" constant="20" id="8MM-Bg-iZn"/>
+                                                <constraint firstItem="Fe2-nG-027" firstAttribute="leading" secondItem="aYQ-wQ-wsh" secondAttribute="leading" constant="20" id="NOT-ed-KAk"/>
+                                                <constraint firstAttribute="bottom" secondItem="Fe2-nG-027" secondAttribute="bottom" constant="7" id="gxw-F4-DTT"/>
+                                                <constraint firstItem="Fe2-nG-027" firstAttribute="top" secondItem="aYQ-wQ-wsh" secondAttribute="top" constant="7" id="o7R-lH-VJM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="iBeacon advertising" id="6hq-Mu-Isy">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ETf-Bc-0DM">
+                                        <rect key="frame" x="0.0" y="374" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ETf-Bc-0DM" id="Svh-Sz-bU7">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYP-CF-x2X">
+                                                    <rect key="frame" x="20" y="11" width="223" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Gad-mi-IKH">
+                                                    <rect key="frame" x="251" y="6" width="51" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="onTintColor" red="0.66666666669999997" green="0.15686274510000001" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="toggleBeaconActive:" destination="wka-gy-Rbv" eventType="valueChanged" id="XUX-Xd-EQ6"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Gad-mi-IKH" firstAttribute="leading" secondItem="NYP-CF-x2X" secondAttribute="trailing" constant="8" id="4wb-LG-TOo"/>
+                                                <constraint firstAttribute="bottom" secondItem="NYP-CF-x2X" secondAttribute="bottom" constant="12" id="8hY-CI-cIZ"/>
+                                                <constraint firstItem="NYP-CF-x2X" firstAttribute="top" secondItem="Svh-Sz-bU7" secondAttribute="top" constant="11" id="ELQ-eb-aJ1"/>
+                                                <constraint firstItem="Gad-mi-IKH" firstAttribute="top" secondItem="Svh-Sz-bU7" secondAttribute="top" constant="6" id="inr-Z9-C8F"/>
+                                                <constraint firstAttribute="bottom" secondItem="Gad-mi-IKH" secondAttribute="bottom" constant="7" id="mQa-PP-iFV"/>
+                                                <constraint firstItem="NYP-CF-x2X" firstAttribute="leading" secondItem="Svh-Sz-bU7" secondAttribute="leading" constant="20" id="of1-k3-qq8"/>
+                                                <constraint firstAttribute="trailing" secondItem="Gad-mi-IKH" secondAttribute="trailing" constant="20" id="q2A-tW-OpS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="wka-gy-Rbv" id="Kue-cH-e3k"/>
+                            <outlet property="delegate" destination="wka-gy-Rbv" id="hTD-0b-z7M"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Geofancy iBeacon" id="dNY-xC-cvA"/>
+                    <connections>
+                        <outlet property="_activeSwitch" destination="Gad-mi-IKH" id="JlC-Lu-R0I"/>
+                        <outlet property="_majorIdTextField" destination="hEo-02-lXf" id="ldq-bJ-0nb"/>
+                        <outlet property="_minorIdTextField" destination="Fe2-nG-027" id="UdX-O6-SSY"/>
+                        <outlet property="_uuidTextField" destination="a2Q-V5-ICQ" id="ltk-7P-3f5"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KLK-Pl-rfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125" y="-2"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SampleIcon" width="72" height="72"/>
+    </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
