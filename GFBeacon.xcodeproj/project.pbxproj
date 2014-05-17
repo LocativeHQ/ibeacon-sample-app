@@ -208,6 +208,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Marcus Kida";
 				TargetAttributes = {
+					2A9317C6186597FC005AB44B = {
+						DevelopmentTeam = 857XYUU5FE;
+					};
 					2A9317E7186597FC005AB44B = {
 						TestTargetID = 2A9317C6186597FC005AB44B;
 					};
@@ -391,10 +394,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GFBeacon/GFBeacon-Prefix.pch";
 				INFOPLIST_FILE = "GFBeacon/GFBeacon-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "72DAC786-76F8-481B-B7F2-7DD5DA4EAB8B";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -404,10 +409,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GFBeacon/GFBeacon-Prefix.pch";
 				INFOPLIST_FILE = "GFBeacon/GFBeacon-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "72DAC786-76F8-481B-B7F2-7DD5DA4EAB8B";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -473,6 +480,7 @@
 				2A9317FB186597FC005AB44B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A9317FC186597FC005AB44B /* Build configuration list for PBXNativeTarget "GFBeaconTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +489,7 @@
 				2A9317FE186597FC005AB44B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
