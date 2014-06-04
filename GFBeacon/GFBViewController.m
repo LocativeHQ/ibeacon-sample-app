@@ -13,9 +13,9 @@ static NSString *const kBeaconUUID = @"954FBC91-620E-4B5A-86F7-1F31A0054194";
 
 @interface GFBViewController ()
 {
-    IBOutlet UITextField *_uuidTextField;
-    IBOutlet UITextField *_majorIdTextField;
-    IBOutlet UITextField *_minorIdTextField;
+    IBOutlet UILabel *_uuidLabel;
+    IBOutlet UILabel *_majorIdLabel;
+    IBOutlet UILabel *_minorIdLabel;
     
     IBOutlet UISwitch *_activeSwitch;
 }
@@ -42,9 +42,9 @@ static NSString *const kBeaconUUID = @"954FBC91-620E-4B5A-86F7-1F31A0054194";
     
     self.peripheralManager = [[CBPeripheralManager alloc] initWithDelegate:nil queue:nil options:nil];
 
-    [_uuidTextField setText:kBeaconUUID];
-    [_majorIdTextField setText:@"0"];
-    [_minorIdTextField setText:@"0"];
+    [_uuidLabel setText:kBeaconUUID];
+    [_majorIdLabel setText:@"0"];
+    [_minorIdLabel setText:@"0"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,9 +57,9 @@ static NSString *const kBeaconUUID = @"954FBC91-620E-4B5A-86F7-1F31A0054194";
 - (IBAction) toggleBeaconActive:(UISwitch *)sw
 {
     if (sw.on) {
-        self.beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc] initWithUUIDString:_uuidTextField.text]
-                                                                    major:[_majorIdTextField.text intValue]
-                                                                    minor:[_minorIdTextField.text intValue]
+        self.beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:[[NSUUID alloc] initWithUUIDString:_uuidLabel.text]
+                                                                    major:[_majorIdLabel.text intValue]
+                                                                    minor:[_minorIdLabel.text intValue]
                                                                identifier:kBeaconIdentifier];
         if (self.peripheralManager.state == CBPeripheralManagerStatePoweredOn) {
             [self.peripheralManager startAdvertising:[self.beaconRegion peripheralDataWithMeasuredPower:nil]];

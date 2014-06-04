@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="jdq-N6-BrS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="jdq-N6-BrS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="-337" y="-2"/>
         </scene>
-        <!--View Controller - Geofancy iBeacon-->
+        <!--View Controller - Geofancy Beacon-->
         <scene sceneID="gb9-Ns-yAK">
             <objects>
                 <tableViewController id="wka-gy-Rbv" customClass="GFBViewController" sceneMemberID="viewController">
@@ -45,13 +45,15 @@
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SampleIcon" translatesAutoresizingMaskIntoConstraints="NO" id="p9L-dk-Ix3">
                                                     <rect key="frame" x="124" y="9" width="72" height="72"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="72" id="8o1-e8-ZlP"/>
+                                                        <constraint firstAttribute="width" constant="72" id="usM-fq-Wl6"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="p9L-dk-Ix3" secondAttribute="bottom" constant="9" id="4ix-Vt-hlC"/>
-                                                <constraint firstAttribute="trailing" secondItem="p9L-dk-Ix3" secondAttribute="trailing" constant="124" id="ZJh-5F-eBM"/>
-                                                <constraint firstItem="p9L-dk-Ix3" firstAttribute="top" secondItem="U5X-cB-cK7" secondAttribute="top" constant="9" id="bvV-M3-VpD"/>
-                                                <constraint firstItem="p9L-dk-Ix3" firstAttribute="leading" secondItem="U5X-cB-cK7" secondAttribute="leading" constant="124" id="xAS-Xx-fuW"/>
+                                                <constraint firstAttribute="centerX" secondItem="p9L-dk-Ix3" secondAttribute="centerX" id="JI0-ge-SPB"/>
+                                                <constraint firstAttribute="centerY" secondItem="p9L-dk-Ix3" secondAttribute="centerY" id="qo3-AD-wbW"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -66,18 +68,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter custom UUID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a2Q-V5-ICQ">
-                                                    <rect key="frame" x="20" y="7" width="280" height="30"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="954FBC91-620E-4B5A-86F7-1F31A0054194" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="O3j-RT-aZ3">
+                                                    <rect key="frame" x="20" y="11" width="280" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="a2Q-V5-ICQ" secondAttribute="bottom" constant="7" id="6Jg-mq-6Ke"/>
-                                                <constraint firstItem="a2Q-V5-ICQ" firstAttribute="top" secondItem="PaO-Le-ayu" secondAttribute="top" constant="7" id="FRl-MJ-v7r"/>
-                                                <constraint firstAttribute="trailing" secondItem="a2Q-V5-ICQ" secondAttribute="trailing" constant="20" id="ZDd-KE-XfW"/>
-                                                <constraint firstItem="a2Q-V5-ICQ" firstAttribute="leading" secondItem="PaO-Le-ayu" secondAttribute="leading" constant="20" id="qoL-a8-l52"/>
+                                                <constraint firstItem="O3j-RT-aZ3" firstAttribute="top" secondItem="PaO-Le-ayu" secondAttribute="top" constant="11" id="7aa-KM-mhP"/>
+                                                <constraint firstAttribute="bottom" secondItem="O3j-RT-aZ3" secondAttribute="bottom" constant="12" id="Mbc-p3-jsm"/>
+                                                <constraint firstAttribute="trailing" secondItem="O3j-RT-aZ3" secondAttribute="trailing" constant="20" id="nbN-T0-xC8"/>
+                                                <constraint firstItem="O3j-RT-aZ3" firstAttribute="leading" secondItem="PaO-Le-ayu" secondAttribute="leading" constant="20" id="pwp-aY-dEb"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -92,18 +95,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter iBeacon's Major ID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hEo-02-lXf">
-                                                    <rect key="frame" x="20" y="7" width="280" height="30"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8QS-1z-FHP">
+                                                    <rect key="frame" x="20" y="11" width="280" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="hEo-02-lXf" firstAttribute="leading" secondItem="j22-pz-shp" secondAttribute="leading" constant="20" id="2N0-27-KAV"/>
-                                                <constraint firstAttribute="bottom" secondItem="hEo-02-lXf" secondAttribute="bottom" constant="7" id="Nic-w8-zf1"/>
-                                                <constraint firstAttribute="trailing" secondItem="hEo-02-lXf" secondAttribute="trailing" constant="20" id="QHB-8P-iPd"/>
-                                                <constraint firstItem="hEo-02-lXf" firstAttribute="top" secondItem="j22-pz-shp" secondAttribute="top" constant="7" id="Vd6-p1-PaX"/>
+                                                <constraint firstItem="8QS-1z-FHP" firstAttribute="top" secondItem="j22-pz-shp" secondAttribute="top" constant="11" id="PAZ-fh-kcS"/>
+                                                <constraint firstAttribute="trailing" secondItem="8QS-1z-FHP" secondAttribute="trailing" constant="20" id="Rpy-mh-Npj"/>
+                                                <constraint firstItem="8QS-1z-FHP" firstAttribute="leading" secondItem="j22-pz-shp" secondAttribute="leading" constant="20" id="Xoy-F8-ElV"/>
+                                                <constraint firstAttribute="bottom" secondItem="8QS-1z-FHP" secondAttribute="bottom" constant="12" id="ZsZ-BX-DHd"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -118,18 +122,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter iBeacon's Minor ID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fe2-nG-027">
-                                                    <rect key="frame" x="20" y="7" width="280" height="30"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5eQ-Up-yev">
+                                                    <rect key="frame" x="20" y="11" width="280" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="Fe2-nG-027" secondAttribute="trailing" constant="20" id="8MM-Bg-iZn"/>
-                                                <constraint firstItem="Fe2-nG-027" firstAttribute="leading" secondItem="aYQ-wQ-wsh" secondAttribute="leading" constant="20" id="NOT-ed-KAk"/>
-                                                <constraint firstAttribute="bottom" secondItem="Fe2-nG-027" secondAttribute="bottom" constant="7" id="gxw-F4-DTT"/>
-                                                <constraint firstItem="Fe2-nG-027" firstAttribute="top" secondItem="aYQ-wQ-wsh" secondAttribute="top" constant="7" id="o7R-lH-VJM"/>
+                                                <constraint firstAttribute="bottom" secondItem="5eQ-Up-yev" secondAttribute="bottom" constant="12" id="2up-nZ-IC6"/>
+                                                <constraint firstAttribute="trailing" secondItem="5eQ-Up-yev" secondAttribute="trailing" constant="20" id="ZcC-Jn-PsO"/>
+                                                <constraint firstItem="5eQ-Up-yev" firstAttribute="leading" secondItem="aYQ-wQ-wsh" secondAttribute="leading" constant="20" id="dcK-MP-bsz"/>
+                                                <constraint firstItem="5eQ-Up-yev" firstAttribute="top" secondItem="aYQ-wQ-wsh" secondAttribute="top" constant="11" id="k2C-0n-cts"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -178,12 +183,12 @@
                             <outlet property="delegate" destination="wka-gy-Rbv" id="hTD-0b-z7M"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Geofancy iBeacon" id="dNY-xC-cvA"/>
+                    <navigationItem key="navigationItem" title="Geofancy Beacon" id="dNY-xC-cvA"/>
                     <connections>
                         <outlet property="_activeSwitch" destination="Gad-mi-IKH" id="JlC-Lu-R0I"/>
-                        <outlet property="_majorIdTextField" destination="hEo-02-lXf" id="ldq-bJ-0nb"/>
-                        <outlet property="_minorIdTextField" destination="Fe2-nG-027" id="UdX-O6-SSY"/>
-                        <outlet property="_uuidTextField" destination="a2Q-V5-ICQ" id="ltk-7P-3f5"/>
+                        <outlet property="_majorIdLabel" destination="8QS-1z-FHP" id="ISU-8u-Hot"/>
+                        <outlet property="_minorIdLabel" destination="5eQ-Up-yev" id="yfp-M2-r6h"/>
+                        <outlet property="_uuidLabel" destination="O3j-RT-aZ3" id="EU8-GM-tb8"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KLK-Pl-rfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
