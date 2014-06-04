@@ -140,7 +140,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="iBeacon advertising" id="6hq-Mu-Isy">
+                            <tableViewSection headerTitle="iBeacon ranging" id="6hq-Mu-Isy">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ETf-Bc-0DM">
                                         <rect key="frame" x="0.0" y="374" width="320" height="44"/>
