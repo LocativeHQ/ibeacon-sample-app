@@ -13,5 +13,3 @@ For more info about **Locative** check out [http://locative.io](http://locative.
 There's also another neat little feature which will gain more attention in the near future. Locative features a Geofence-Logging as-a-service at [https://my.locative.io](https://my.locative.io). So check it out and grab yourself an account ;-)
 
 ![image](https://raw.github.com/kimar/GFBeacon/master/Assets/Screenshot.png)
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/LocativeHQ/ibeacon-sample-app/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
