@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:GFBeacon.xcodeproj">
+      location = "self:/Users/mkida/Development/Locative/ibeacon-sample-app/LocativeBeacon.xcodeproj">
    </FileRef>
 </Workspace>

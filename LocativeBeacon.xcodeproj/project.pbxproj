@@ -23,6 +23,7 @@
 		2A9318011865A18F005AB44B /* GFBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A9318001865A18F005AB44B /* GFBViewController.m */; };
 		2A9318031865A449005AB44B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9318021865A449005AB44B /* CoreLocation.framework */; };
 		2A9318051865A947005AB44B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9318041865A947005AB44B /* CoreBluetooth.framework */; };
+		ECE3FBD81C0EC10500676803 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE3FBD71C0EC10500676803 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,27 +37,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2A9317C7186597FC005AB44B /* GFBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GFBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A9317C7186597FC005AB44B /* LocativeBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocativeBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9317CA186597FC005AB44B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2A9317CC186597FC005AB44B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2A9317CE186597FC005AB44B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		2A9317D2186597FC005AB44B /* GFBeacon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GFBeacon-Info.plist"; sourceTree = "<group>"; };
+		2A9317D2186597FC005AB44B /* LocativeBeacon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocativeBeacon-Info.plist"; sourceTree = "<group>"; };
 		2A9317D4186597FC005AB44B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2A9317D6186597FC005AB44B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2A9317D8186597FC005AB44B /* GFBeacon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GFBeacon-Prefix.pch"; sourceTree = "<group>"; };
+		2A9317D8186597FC005AB44B /* LocativeBeacon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LocativeBeacon-Prefix.pch"; sourceTree = "<group>"; };
 		2A9317D9186597FC005AB44B /* GFBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFBAppDelegate.h; sourceTree = "<group>"; };
 		2A9317DA186597FC005AB44B /* GFBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFBAppDelegate.m; sourceTree = "<group>"; };
 		2A9317DD186597FC005AB44B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A9317E2186597FC005AB44B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2A9317E8186597FC005AB44B /* GFBeaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GFBeaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A9317E8186597FC005AB44B /* LocativeBeacon.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocativeBeacon.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9317E9186597FC005AB44B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		2A9317F1186597FC005AB44B /* GFBeaconTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GFBeaconTests-Info.plist"; sourceTree = "<group>"; };
+		2A9317F1186597FC005AB44B /* LocativeBeaconTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LocativeBeaconTests-Info.plist"; sourceTree = "<group>"; };
 		2A9317F3186597FC005AB44B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2A9317F5186597FC005AB44B /* GFBeaconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFBeaconTests.m; sourceTree = "<group>"; };
 		2A9317FF1865A18F005AB44B /* GFBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBViewController.h; sourceTree = "<group>"; };
 		2A9318001865A18F005AB44B /* GFBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBViewController.m; sourceTree = "<group>"; };
 		2A9318021865A449005AB44B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2A9318041865A947005AB44B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		ECE3FBD71C0EC10500676803 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,8 @@
 		2A9317C8186597FC005AB44B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2A9317C7186597FC005AB44B /* GFBeacon.app */,
-				2A9317E8186597FC005AB44B /* GFBeaconTests.xctest */,
+				2A9317C7186597FC005AB44B /* LocativeBeacon.app */,
+				2A9317E8186597FC005AB44B /* LocativeBeacon.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +124,7 @@
 			children = (
 				2A9317D9186597FC005AB44B /* GFBAppDelegate.h */,
 				2A9317DA186597FC005AB44B /* GFBAppDelegate.m */,
+				ECE3FBD71C0EC10500676803 /* Launch Screen.storyboard */,
 				2A9317DC186597FC005AB44B /* Main.storyboard */,
 				2A9317E2186597FC005AB44B /* Images.xcassets */,
 				2A9317FF1865A18F005AB44B /* GFBViewController.h */,
@@ -134,10 +137,10 @@
 		2A9317D1186597FC005AB44B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2A9317D2186597FC005AB44B /* GFBeacon-Info.plist */,
+				2A9317D2186597FC005AB44B /* LocativeBeacon-Info.plist */,
 				2A9317D3186597FC005AB44B /* InfoPlist.strings */,
 				2A9317D6186597FC005AB44B /* main.m */,
-				2A9317D8186597FC005AB44B /* GFBeacon-Prefix.pch */,
+				2A9317D8186597FC005AB44B /* LocativeBeacon-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -154,7 +157,7 @@
 		2A9317F0186597FC005AB44B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2A9317F1186597FC005AB44B /* GFBeaconTests-Info.plist */,
+				2A9317F1186597FC005AB44B /* LocativeBeaconTests-Info.plist */,
 				2A9317F2186597FC005AB44B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -163,9 +166,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2A9317C6186597FC005AB44B /* GFBeacon */ = {
+		2A9317C6186597FC005AB44B /* LocativeBeacon */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A9317F9186597FC005AB44B /* Build configuration list for PBXNativeTarget "GFBeacon" */;
+			buildConfigurationList = 2A9317F9186597FC005AB44B /* Build configuration list for PBXNativeTarget "LocativeBeacon" */;
 			buildPhases = (
 				2A9317C3186597FC005AB44B /* Sources */,
 				2A9317C4186597FC005AB44B /* Frameworks */,
@@ -175,14 +178,14 @@
 			);
 			dependencies = (
 			);
-			name = GFBeacon;
+			name = LocativeBeacon;
 			productName = GFBeacon;
-			productReference = 2A9317C7186597FC005AB44B /* GFBeacon.app */;
+			productReference = 2A9317C7186597FC005AB44B /* LocativeBeacon.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2A9317E7186597FC005AB44B /* GFBeaconTests */ = {
+		2A9317E7186597FC005AB44B /* LocativeBeaconTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A9317FC186597FC005AB44B /* Build configuration list for PBXNativeTarget "GFBeaconTests" */;
+			buildConfigurationList = 2A9317FC186597FC005AB44B /* Build configuration list for PBXNativeTarget "LocativeBeaconTests" */;
 			buildPhases = (
 				2A9317E4186597FC005AB44B /* Sources */,
 				2A9317E5186597FC005AB44B /* Frameworks */,
@@ -193,9 +196,9 @@
 			dependencies = (
 				2A9317EE186597FC005AB44B /* PBXTargetDependency */,
 			);
-			name = GFBeaconTests;
+			name = LocativeBeaconTests;
 			productName = GFBeaconTests;
-			productReference = 2A9317E8186597FC005AB44B /* GFBeaconTests.xctest */;
+			productReference = 2A9317E8186597FC005AB44B /* LocativeBeacon.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +219,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2A9317C2186597FC005AB44B /* Build configuration list for PBXProject "GFBeacon" */;
+			buildConfigurationList = 2A9317C2186597FC005AB44B /* Build configuration list for PBXProject "LocativeBeacon" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -229,8 +232,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2A9317C6186597FC005AB44B /* GFBeacon */,
-				2A9317E7186597FC005AB44B /* GFBeaconTests */,
+				2A9317C6186597FC005AB44B /* LocativeBeacon */,
+				2A9317E7186597FC005AB44B /* LocativeBeaconTests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,6 +245,7 @@
 			files = (
 				2A9317E3186597FC005AB44B /* Images.xcassets in Resources */,
 				2A9317D5186597FC005AB44B /* InfoPlist.strings in Resources */,
+				ECE3FBD81C0EC10500676803 /* Launch Screen.storyboard in Resources */,
 				2A9317DE186597FC005AB44B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +284,7 @@
 /* Begin PBXTargetDependency section */
 		2A9317EE186597FC005AB44B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2A9317C6186597FC005AB44B /* GFBeacon */;
+			target = 2A9317C6186597FC005AB44B /* LocativeBeacon */;
 			targetProxy = 2A9317ED186597FC005AB44B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -330,8 +334,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Marcus Kida (9V2E3Q9G27)";
-				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Marcus Kida (9V2E3Q9G27)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -349,7 +352,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "17BF01D7-5C27-49C1-9992-10355A4D90BD";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -371,8 +373,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Marcus Kida (9V2E3Q9G27)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marcus Kida (9V2E3Q9G27)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -383,7 +384,6 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PROVISIONING_PROFILE = "17BF01D7-5C27-49C1-9992-10355A4D90BD";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -393,13 +393,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GFBeacon/GFBeacon-Prefix.pch";
-				INFOPLIST_FILE = "GFBeacon/GFBeacon-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "72DAC786-76F8-481B-B7F2-7DD5DA4EAB8B";
+				GCC_PREFIX_HEADER = "GFBeacon/LocativeBeacon-Prefix.pch";
+				INFOPLIST_FILE = "GFBeacon/LocativeBeacon-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = io.kida.GFBeacon;
+				PRODUCT_NAME = LocativeBeacon;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -408,13 +406,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GFBeacon/GFBeacon-Prefix.pch";
-				INFOPLIST_FILE = "GFBeacon/GFBeacon-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "72DAC786-76F8-481B-B7F2-7DD5DA4EAB8B";
+				GCC_PREFIX_HEADER = "GFBeacon/LocativeBeacon-Prefix.pch";
+				INFOPLIST_FILE = "GFBeacon/LocativeBeacon-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = io.kida.GFBeacon;
+				PRODUCT_NAME = LocativeBeacon;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -430,13 +426,13 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GFBeacon/GFBeacon-Prefix.pch";
+				GCC_PREFIX_HEADER = "GFBeacon/LocativeBeacon-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "GFBeaconTests/GFBeaconTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "GFBeaconTests/LocativeBeaconTests-Info.plist";
+				PRODUCT_NAME = LocativeBeacon;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -453,9 +449,9 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GFBeacon/GFBeacon-Prefix.pch";
-				INFOPLIST_FILE = "GFBeaconTests/GFBeaconTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "GFBeacon/LocativeBeacon-Prefix.pch";
+				INFOPLIST_FILE = "GFBeaconTests/LocativeBeaconTests-Info.plist";
+				PRODUCT_NAME = LocativeBeacon;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -464,7 +460,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2A9317C2186597FC005AB44B /* Build configuration list for PBXProject "GFBeacon" */ = {
+		2A9317C2186597FC005AB44B /* Build configuration list for PBXProject "LocativeBeacon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A9317F7186597FC005AB44B /* Debug */,
@@ -473,7 +469,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A9317F9186597FC005AB44B /* Build configuration list for PBXNativeTarget "GFBeacon" */ = {
+		2A9317F9186597FC005AB44B /* Build configuration list for PBXNativeTarget "LocativeBeacon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A9317FA186597FC005AB44B /* Debug */,
@@ -482,7 +478,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A9317FC186597FC005AB44B /* Build configuration list for PBXNativeTarget "GFBeaconTests" */ = {
+		2A9317FC186597FC005AB44B /* Build configuration list for PBXNativeTarget "LocativeBeaconTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A9317FD186597FC005AB44B /* Debug */,

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="jdq-N6-BrS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="jdq-N6-BrS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -11,6 +12,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="y8z-rh-Hru">
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                         <color key="barTintColor" red="0.66666666666666663" green="0.15686274509803921" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -24,13 +26,14 @@
             </objects>
             <point key="canvasLocation" x="-337" y="-2"/>
         </scene>
-        <!--View Controller - Geofancy Beacon-->
+        <!--Locative Beacon-->
         <scene sceneID="gb9-Ns-yAK">
             <objects>
                 <tableViewController id="wka-gy-Rbv" customClass="GFBViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="OsM-qZ-tse">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="Fhe-ZK-Mwc">
@@ -44,18 +47,20 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SampleIcon" translatesAutoresizingMaskIntoConstraints="NO" id="p9L-dk-Ix3">
                                                     <rect key="frame" x="124" y="9" width="72" height="72"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="72" id="8o1-e8-ZlP"/>
                                                         <constraint firstAttribute="width" constant="72" id="usM-fq-Wl6"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
+                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="centerX" secondItem="p9L-dk-Ix3" secondAttribute="centerX" id="JI0-ge-SPB"/>
                                                 <constraint firstAttribute="centerY" secondItem="p9L-dk-Ix3" secondAttribute="centerY" id="qo3-AD-wbW"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -70,12 +75,13 @@
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="954FBC91-620E-4B5A-86F7-1F31A0054194" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="O3j-RT-aZ3">
                                                     <rect key="frame" x="20" y="11" width="280" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                             <constraints>
                                                 <constraint firstItem="O3j-RT-aZ3" firstAttribute="top" secondItem="PaO-Le-ayu" secondAttribute="top" constant="11" id="7aa-KM-mhP"/>
                                                 <constraint firstAttribute="bottom" secondItem="O3j-RT-aZ3" secondAttribute="bottom" constant="12" id="Mbc-p3-jsm"/>
@@ -83,6 +89,7 @@
                                                 <constraint firstItem="O3j-RT-aZ3" firstAttribute="leading" secondItem="PaO-Le-ayu" secondAttribute="leading" constant="20" id="pwp-aY-dEb"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -97,12 +104,13 @@
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8QS-1z-FHP">
                                                     <rect key="frame" x="20" y="11" width="280" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                             <constraints>
                                                 <constraint firstItem="8QS-1z-FHP" firstAttribute="top" secondItem="j22-pz-shp" secondAttribute="top" constant="11" id="PAZ-fh-kcS"/>
                                                 <constraint firstAttribute="trailing" secondItem="8QS-1z-FHP" secondAttribute="trailing" constant="20" id="Rpy-mh-Npj"/>
@@ -110,6 +118,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="8QS-1z-FHP" secondAttribute="bottom" constant="12" id="ZsZ-BX-DHd"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -124,12 +133,13 @@
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5eQ-Up-yev">
                                                     <rect key="frame" x="20" y="11" width="280" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="5eQ-Up-yev" secondAttribute="bottom" constant="12" id="2up-nZ-IC6"/>
                                                 <constraint firstAttribute="trailing" secondItem="5eQ-Up-yev" secondAttribute="trailing" constant="20" id="ZcC-Jn-PsO"/>
@@ -137,6 +147,7 @@
                                                 <constraint firstItem="5eQ-Up-yev" firstAttribute="top" secondItem="aYQ-wQ-wsh" secondAttribute="top" constant="11" id="k2C-0n-cts"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -151,19 +162,20 @@
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYP-CF-x2X">
                                                     <rect key="frame" x="20" y="11" width="223" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Gad-mi-IKH">
                                                     <rect key="frame" x="251" y="6" width="51" height="31"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
                                                     <color key="onTintColor" red="0.66666666669999997" green="0.15686274510000001" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
                                                     <connections>
                                                         <action selector="toggleBeaconActive:" destination="wka-gy-Rbv" eventType="valueChanged" id="XUX-Xd-EQ6"/>
                                                     </connections>
                                                 </switch>
                                             </subviews>
+                                            <animations/>
                                             <constraints>
                                                 <constraint firstItem="Gad-mi-IKH" firstAttribute="leading" secondItem="NYP-CF-x2X" secondAttribute="trailing" constant="8" id="4wb-LG-TOo"/>
                                                 <constraint firstAttribute="bottom" secondItem="NYP-CF-x2X" secondAttribute="bottom" constant="12" id="8hY-CI-cIZ"/>
@@ -174,6 +186,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="Gad-mi-IKH" secondAttribute="trailing" constant="20" id="q2A-tW-OpS"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <animations/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -183,7 +196,7 @@
                             <outlet property="delegate" destination="wka-gy-Rbv" id="hTD-0b-z7M"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Geofancy Beacon" id="dNY-xC-cvA"/>
+                    <navigationItem key="navigationItem" title="Locative Beacon" id="dNY-xC-cvA"/>
                     <connections>
                         <outlet property="_activeSwitch" destination="Gad-mi-IKH" id="JlC-Lu-R0I"/>
                         <outlet property="_majorIdLabel" destination="8QS-1z-FHP" id="ISU-8u-Hot"/>
@@ -200,9 +213,4 @@
         <image name="SampleIcon" width="72" height="72"/>
     </resources>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>
