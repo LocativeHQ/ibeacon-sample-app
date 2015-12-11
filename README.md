@@ -1,5 +1,11 @@
 # Locative iBeacon Sample App
 
+[![Twitter: @Kidmar](https://img.shields.io/badge/contact-@Kidmar-blue.svg?style=flat)](https://twitter.com/Kidmar)
+[![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/LocativeHQ/ibeacon-sample-app/blob/master/LICENSE.md)
+[![TravisCI](https://api.travis-ci.org/LocativeHQ/ibeacon-sample-app.svg?branch=master)](https://travis-ci.org/LocativeHQ/ibeacon-sample-app)
+[![Join the chat at https://gitter.im/LocativeHQ/ibeacon-sample-app](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/LocativeHQ/ibeacon-sample-app?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![codecov.io](https://codecov.io/github/LocativeHQ/ibeacon-sample-app/coverage.svg?branch=master)](https://codecov.io/github/LocativeHQ/ibeacon-sample-app?branch=master)
+
 Since v1.4.0 Locative supports the use of iBeacons as Geofences.
 
 The feature set is pretty the same as with geographical Geofences, this App can be used with any Bluetooth 4.0 (LE) iDevice to advertise as am iBeacon.
